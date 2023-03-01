@@ -1,0 +1,13 @@
+2023/02/27-11:26:15.144 30cc Reusing MANIFEST C:\Users\manolova\eclipse-workspace\zara-website-testing-project\src\main\resources\Profiles\chromeProfile\Default\Local Storage\leveldb/MANIFEST-000001
+2023/02/27-11:26:15.147 30cc Recovering log #10
+2023/02/27-11:26:15.150 30cc Level-0 table #12: started
+2023/02/27-11:26:15.263 30cc Level-0 table #12: 117185 bytes OK
+2023/02/27-11:26:15.269 30cc Delete type=0 #10
+2023/02/27-11:26:15.272 4320 Compacting 4@0 + 0@1 files
+2023/02/27-11:26:15.291 4320 Generated table #14@0: 73 keys, 120478 bytes
+2023/02/27-11:26:15.291 4320 Compacted 4@0 + 0@1 files => 120478 bytes
+2023/02/27-11:26:15.292 4320 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/02/27-11:26:15.294 4320 Delete type=2 #3
+2023/02/27-11:26:15.294 4320 Delete type=2 #7
+2023/02/27-11:26:15.294 4320 Delete type=2 #9
+2023/02/27-11:26:15.294 4320 Delete type=2 #12

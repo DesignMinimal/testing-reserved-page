@@ -1,0 +1,5 @@
+no,username,password,expectedMessage,description
+1,incorrect@abv.bg,Supersecretpassword1!,The user name and password provided do not correspond to any account at Zara.com.,incorrect username
+2,designminimal@abv.bg,incorrectPassword,The user name and password provided do not correspond to any account at Zara.com.,incorrect password
+3,incorrect@abv,incorrectPassword,The user name and password provided do not correspond to any account at Zara.com.,incorrect username and password
+5,designminimal@abv.bg,,Required field.,empty password

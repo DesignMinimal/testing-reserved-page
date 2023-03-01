@@ -1,0 +1,18 @@
+[11744:16660:0227/112731.154:WARNING:chrome_main_delegate.cc(617)] This is Chrome version 110.0.5481.178 (not a warning)
+[11744:4300:0227/112731.286:ERROR:token_service_table.cc(139)] Failed to decrypt token for service AccountId-112588114336945176679
+[11744:14392:0227/112731.467:INFO:login_database.cc(1351)] Password decryption failed, encryption_result is 1
+[11744:14392:0227/112731.468:INFO:login_database.cc(1351)] Password decryption failed, encryption_result is 1
+[11744:16660:0227/112734.894:ERROR:device_event_log_impl.cc(218)] [11:27:34.894] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[11744:16660:0227/112734.896:ERROR:device_event_log_impl.cc(218)] [11:27:34.896] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[11744:16660:0227/112734.897:ERROR:device_event_log_impl.cc(218)] [11:27:34.897] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+[11744:16660:0227/112735.173:INFO:model_executor_impl.cc(188)] Segmentation model result: 1 for segment OPTIMIZATION_TARGET_SEGMENTATION_SEARCH_USER
+[11744:16660:0227/112735.174:INFO:model_executor_impl.cc(188)] Segmentation model result: 1 for segment OPTIMIZATION_TARGET_SEGMENTATION_SEARCH_USER
+[11744:16660:0227/112735.181:INFO:model_executor_impl.cc(188)] Segmentation model result: 0 for segment OPTIMIZATION_TARGET_SEGMENTATION_SHOPPING_USER
+[11744:16660:0227/112735.181:INFO:model_executor_impl.cc(188)] Segmentation model result: 0 for segment OPTIMIZATION_TARGET_SEGMENTATION_SHOPPING_USER
+[11744:16660:0227/112735.183:INFO:model_executor_impl.cc(188)] Segmentation model result: 1 for segment CROSS_DEVICE_USER_SEGMENT
+[11744:16660:0227/112735.183:INFO:model_executor_impl.cc(188)] Segmentation model result: 1 for segment CROSS_DEVICE_USER_SEGMENT
+[11744:16660:0227/112735.184:INFO:model_executor_impl.cc(188)] Segmentation model result: 0 for segment RESUME_HEAVY_USER_SEGMENT
+[11744:16660:0227/112735.184:INFO:model_executor_impl.cc(188)] Segmentation model result: 0 for segment RESUME_HEAVY_USER_SEGMENT
+[11744:16660:0227/112735.710:INFO:CONSOLE(1)] "%c[IND]%c You are running %c Windows %c Operating system, %c Chrome %c browser, version: %c 110 color: White; background: #17384c; font-weight: bold; padding: 3px; border-radius:3px 0 0 3px; color: Black; background: #50e590; font-weight: bold; padding: 3px color: White; background: #17384c; font-weight: bold; padding: 3px; color: Black; background: #50e590; font-weight: bold; padding: 3px color: White; background: #17384c; font-weight: bold; padding: 3px; color: Black; background: #50e590; font-weight: bold; padding: 3px color: White; background: #17384c; font-weight: bold; padding: 3px; border-radius:0 3px 3px 0", source: https://aacdn.nagich.com/core/4.3.2/accessibility.js (1)
+[11744:16660:0227/112735.710:INFO:CONSOLE(1)] "%c[IND]%c Version %c4.3.2%c color: White; background: #17384c; font-weight: bold; padding: 3px; border-radius:3px 0 0 3px; color: Black; background: #50e590; font-weight: bold; padding: 3px color: White; background: #17384c; font-weight: bold; padding: 3px; border-radius:0 3px 3px 0 ", source: https://aacdn.nagich.com/core/4.3.2/accessibility.js (1)
+[11744:16660:0227/112742.205:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

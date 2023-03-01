@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AddItemToCartSuite" verbose="1">
+	<test name="AddItemToCart">
+		<classes>
+			<class name="com.zara.loginpagetests.AddItemToCardTests">
+				<parameter name="browser" value="chrome" />
+				<parameter name="username" value="designminimal@abv.bg" />
+				<parameter name="password" value="Supersecretpassword1!" />
+				<methods>
+					<include name="shopGirlsJacket" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
