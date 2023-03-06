@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LogInPageTestsSuite" verbose="1">
+	<test name="logInTest">
+		<classes>
+			<class name="com.zara.loginpagetests.LogInTests">
+				<parameter name="browser" value="chrome" />
+				<parameter name="username" value="designminimal@abv.bg" />
+				<parameter name="password" value="Supersecretpassword1!" />
+				<methods>
+					<include name="positiveLogInTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

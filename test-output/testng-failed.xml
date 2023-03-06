@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AddItemToCartSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AddItemToCart(failed)">
+    <classes>
+      <class name="com.zara.loginpagetests.AddItemToCardTests">
+        <parameter name="password" value="Supersecretpassword1!"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="username" value="designminimal@abv.bg"/>
+        <methods>
+          <include name="shopGirlsJacket" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.zara.loginpagetests.AddItemToCardTests -->
+    </classes>
+  </test> <!-- AddItemToCart(failed) -->
+</suite> <!-- Failed suite [AddItemToCartSuite] -->
