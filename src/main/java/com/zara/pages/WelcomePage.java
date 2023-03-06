@@ -32,7 +32,7 @@ public class WelcomePage extends BasePageObject {
 		click(acceptAllCookiesButton);
 	}
 
-	/** Click log in button */
+	/** Click log in button with valid credentials  */
 	public LogInPage clickLogInButton() {
 		openWelcomePage();
 		waitForVisibilityOf(acceptAllCookiesButton, Duration.ofSeconds(5));
@@ -42,10 +42,12 @@ public class WelcomePage extends BasePageObject {
 		return new LogInPage(driver);
 	}
 	
-	public AccoutPage logIn(WelcomePage welcomePage, String username, String password) {
+
+	
+	public AccoutPage logIn(String username, String password) {
 
 //		open log in page
-		LogInPage logInPage = welcomePage.clickLogInButton();
+		LogInPage logInPage = clickLogInButton();
 
 //		open account page
 		AccoutPage accountPage = logInPage.enterValidCredentials(username, password);

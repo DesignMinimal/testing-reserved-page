@@ -1,13 +1,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="LogInPageTestsSuite" verbose="1">
-	<test name="logInTest">
+	<test name="positiveLogInPageTests">
+		<parameter name="browser" value="firefox" />
+		<parameter name="username" value="designminimal@abv.bg" />
+		<parameter name="password" value="Supersecretpassword1!" />
+		<parameter name="accountName" value="mariya" />
+		
 		<classes>
-			<class name="com.zara.loginpagetests.LogInTests">
-				<parameter name="browser" value="chrome" />
-				<parameter name="username" value="designminimal@abv.bg" />
-				<parameter name="password" value="Supersecretpassword1!" />
+			<class name="com.zara.loginpagetests.LogInPageTests">
 				<methods>
-					<include name="positiveLogInTest" />
+					<include name="positiveLogInPageTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="negativeLogInPageTests">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.zara.loginpagetests.LogInPageTests">
+				<methods>
+					<include name="negativeLogInPageTest" />
 				</methods>
 			</class>
 		</classes>

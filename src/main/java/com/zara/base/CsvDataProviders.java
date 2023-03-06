@@ -21,7 +21,7 @@ public class CsvDataProviders {
 	public static Iterator<Object[]> csvReader(Method method) {
 		List<Object[]> list = new ArrayList<Object[]>();
 		String pathname = "src" + File.separator + "test" + File.separator + "resources" + File.separator
-				+ "dataproviders" + File.separator + method.getDeclaringClass().getSimpleName() + File.separator
+				+ "DataProviders" + File.separator + method.getDeclaringClass().getSimpleName() + File.separator
 				+ method.getName() + ".csv";
 		// String pathname =
 		// "src/test/resources/dataproviders/NameOfFolder/nameOfCSVFile.csv"; -> this

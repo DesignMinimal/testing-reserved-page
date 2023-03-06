@@ -1,5 +1,7 @@
 package com.zara.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 public class LogInPage extends BasePageObject {
 
 //	private By usernameLocator = By.xpath("//input[@name='logonId']");
-//	private By passwordfield = By.xpath("//input[@name='password']");
+//	private By passwordField = By.xpath("//input[@name='password']");
 //	private By logInButton = By.xpath("//button[@class='zds-button zds-button--primary']");
 
 	private By usernameLocator = By.id("login[username]_id");
@@ -15,6 +17,7 @@ public class LogInPage extends BasePageObject {
 	private By logInButton = By.xpath(
 			"/html//div[@id='loginRegisterRoot']//form[@action='https://www.reserved.com/ie/en/ajx/customer/login/referer/aHR0cHM6Ly93d3cucmVzZXJ2ZWQuY29tL2llL2VuLw,,/uenc/aHR0cHM6Ly93d3cucmVzZXJ2ZWQuY29tL2llL2VuLw,,/?lpp_new_login']/button[.='Sign in']");
 	private By signInButton = By.xpath("//button[@data-selen='login-submit']");
+	private By errorMessageLocator;
 
 	public LogInPage(WebDriver driver) {
 		super(driver);
@@ -42,6 +45,13 @@ public class LogInPage extends BasePageObject {
 	public void acceptAlert() {
 		Alert alert = switchToAlert();
 		alert.accept();
+	}
+
+	public boolean isErrorMessageVisible(String message) {
+		this.errorMessageLocator = By.xpath("//div[text()='" + message + "']");
+		System.out.print(errorMessageLocator);
+		waitForVisibilityOf(errorMessageLocator, Duration.ofSeconds(5));
+		return find(errorMessageLocator).isDisplayed();
 	}
 
 }

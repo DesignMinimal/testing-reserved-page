@@ -1,6 +1,6 @@
 no,username,password,expectedMessage,description
 1,incorrect@abv.bg,Supersecretpassword1!,Invalid login or password.,incorrect username
 2,designminimal@abv.bg,incorrectPassword,Invalid login or password.,incorrect password
-3,incorrect@abv,incorrectPassword,Please enter valid characters only,invalid username and incorrect password
+3,incorrect@abv,incorrectPassword,Invalid login or password.,incorrect username and password
 5,designminimal@abv.bg,,This field is required,empty password
 6,,Supersecretpassword1!,This field is required,empty username

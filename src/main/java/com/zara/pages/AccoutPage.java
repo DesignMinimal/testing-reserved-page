@@ -16,7 +16,11 @@ public class AccoutPage extends BasePageObject {
 
 	private By newsLetterLocator = By.xpath("//div[@class='close']");
 	private By menuGirlsLocator = By.linkText("Girls");
-	private By jacketsVestsLocator = By.xpath("//*[text()='girl 5-13 years']/following-sibling::ul/li/a[text()='Jackets, vests']");
+	private By jacketsVestsLocator = By
+			.xpath("//*[text()='girl 5-13 years']/following-sibling::ul/li/a[text()='Jackets, vests']");
+
+	private By actualAccountNameLocator = By
+			.xpath("//div[@class='action-btn__HorizontalActionButton-zbpc1m-2 dwExhh']");
 
 	public AccoutPage(WebDriver driver) {
 		super(driver);
@@ -40,25 +44,35 @@ public class AccoutPage extends BasePageObject {
 		WebElement element = find(newsLetterLocator);
 		element.click();
 	}
-	
-	/** Hover over a menu option Girls and click on a sub menu option Jackets, vests */
+
+	/**
+	 * Hover over a menu option Girls and click on a sub menu option Jackets, vests
+	 */
 	public ViewJacketsVestsPage clickJacketsVestsUnderGirlsSection() {
 		clickOnSubMenuElement(menuGirlsLocator, jacketsVestsLocator);
 		return new ViewJacketsVestsPage(driver);
 	}
 
-	/** Hover over a menu option Girls and click on a sub menu option Jackets, vests under Girls 5-13 with a list search*/
+	/**
+	 * Hover over a menu option Girls and click on a sub menu option Jackets, vests
+	 * under Girls 5-13 with a list search
+	 */
 	public ViewJacketsVestsPage clickViewJacetsVestsUnderGirlsSection(int i) {
-		
+
 		hoverOverElement(find(menuGirlsLocator));
 
 		List<WebElement> jacketsVests = findAll(jacketsVestsLocator);
 		WebElement specifiedJacketsVests = jacketsVests.get(i - 1);
-	
+
 		specifiedJacketsVests.click();
 		return new ViewJacketsVestsPage(driver);
 	}
 
-	
+	public boolean isAccountNameCorrect(String expectedAccountName) {
+		waitForVisibilityOf(actualAccountNameLocator, Duration.ofSeconds(7));
+		String actualAccountName = find(actualAccountNameLocator).getText().toLowerCase();
+		System.out.println("Expected name is: " + expectedAccountName + " and actual name is: " + actualAccountName);
+		return actualAccountName.equals(expectedAccountName);
+	}
 
 }

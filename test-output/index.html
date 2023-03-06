@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-LogInPageTestsSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-LogInPageTestsSuite" title="com.zara.loginpagetests.LogInTests" class="method navigator-link" hash-for-method="logInTest(designminimal@abv.bg, Supersecretpassword1!)">logInTest(designminimal@abv.bg, Supersecretpassword1!)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LogInPageTestsSuite" title="com.zara.loginpagetests.LogInPageTests" class="method navigator-link" hash-for-method="positiveLogInPageTest(designminimal@abv.bg, Supersecretpassword1!, mariya)">positiveLogInPageTest(designminimal@abv.bg, Supersecretpassword1!, mariya)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-LogInPageTestsSuite -->
@@ -121,15 +121,15 @@
           <div class="suite-LogInPageTestsSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.zara.loginpagetests.LogInTests</span>
+              <span class="class-name">com.zara.loginpagetests.LogInPageTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="logInTest(designminimal@abv.bg, Supersecretpassword1!)">
-                  </a> <!-- logInTest(designminimal@abv.bg, Supersecretpassword1!) -->
-                  <span class="method-name">logInTest</span>
-                  <span class="parameters">(designminimal@abv.bg,Supersecretpassword1!)</span>
+                  <a name="positiveLogInPageTest(designminimal@abv.bg, Supersecretpassword1!, mariya)">
+                  </a> <!-- positiveLogInPageTest(designminimal@abv.bg, Supersecretpassword1!, mariya) -->
+                  <span class="method-name">positiveLogInPageTest</span>
+                  <span class="parameters">(designminimal@abv.bg,Supersecretpassword1!,mariya)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,18 +144,19 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;LogInPageTestsSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;logInTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;positiveLogInPageTests&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;Supersecretpassword1!&quot;/&gt;
+    &lt;parameter name=&quot;accountName&quot; value=&quot;mariya&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;designminimal@abv.bg&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zara.loginpagetests.LogInTests&quot;&gt;
-        &lt;parameter name=&quot;password&quot; value=&quot;Supersecretpassword1!&quot;/&gt;
-        &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-        &lt;parameter name=&quot;username&quot; value=&quot;designminimal@abv.bg&quot;/&gt;
+      &lt;class name=&quot;com.zara.loginpagetests.LogInPageTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;logInTest&quot;/&gt;
+          &lt;include name=&quot;positiveLogInPageTest&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.zara.loginpagetests.LogInTests --&gt;
+      &lt;/class&gt; &lt;!-- com.zara.loginpagetests.LogInPageTests --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- logInTest --&gt;
+  &lt;/test&gt; &lt;!-- positiveLogInPageTests --&gt;
 &lt;/suite&gt; &lt;!-- LogInPageTestsSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -167,7 +168,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">logInTest (1 class)</span>
+                <span class="test-name">positiveLogInPageTests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,14 +196,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logInTest')
-data.setCell(0, 2, 'com.zara.loginpagetests.LogInTests')
-data.setCell(0, 3, 7470);
+data.setCell(0, 1, 'positiveLogInPageTest')
+data.setCell(0, 2, 'com.zara.loginpagetests.LogInPageTests')
+data.setCell(0, 3, 9004);
 window.suiteTableData['LogInPageTestsSuite']= { tableData: data, tableDiv: 'times-div-LogInPageTestsSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-LogInPageTestsSuite">
               </div> <!-- times-div-LogInPageTestsSuite -->
             </div> <!-- times-div -->
@@ -217,9 +218,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-LogInPageTestsSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zara.loginpagetests.LogInPageTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">negativeLogInPageTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-LogInPageTestsSuite" class="panel">
@@ -228,18 +236,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zara.loginpagetests.LogInTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zara.loginpagetests.LogInPageTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.zara.loginpagetests.LogInTests.logInTest(java.lang.String,java.lang.String), chrome)</span>
+                <span class="method-name">setUp(public void com.zara.loginpagetests.LogInPageTests.positiveLogInPageTest(java.lang.String,java.lang....)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">logInTest(designminimal@abv.bg, Supersecretpassword1!)</span>
-                <span class="method-start">2156 ms</span>
+                <span class="method-name">positiveLogInPageTest(designminimal@abv.bg, Supersecretpassword1!, mariya)</span>
+                <span class="method-start">3338 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9629 ms</span>
+                <span class="method-start">12345 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -24,7 +24,7 @@ public class AddItemToCardTests extends TestUtilities {
 		WelcomePage welcomePage = new WelcomePage(driver);
 
 		// logging in
-		AccoutPage accountPage = welcomePage.logIn(welcomePage, username, password);
+		AccoutPage accountPage = welcomePage.logIn(username, password);
 
 		// open page with jackets
 		ViewJacketsVestsPage viewJacketsVestsPage = accountPage.clickJacketsVestsUnderGirlsSection();

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [AddItemToCartSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="AddItemToCart(failed)">
+<suite name="Failed suite [LogInPageTestsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="positiveLogInPageTests(failed)">
+    <parameter name="password" value="Supersecretpassword1!"/>
+    <parameter name="accountName" value="Mariya"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="designminimal@abv.bg"/>
     <classes>
-      <class name="com.zara.loginpagetests.AddItemToCardTests">
-        <parameter name="password" value="Supersecretpassword1!"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="username" value="designminimal@abv.bg"/>
+      <class name="com.zara.loginpagetests.LogInPageTests">
         <methods>
-          <include name="shopGirlsJacket" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="positiveLogInPageTest" invocation-numbers="0"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.zara.loginpagetests.AddItemToCardTests -->
+      </class> <!-- com.zara.loginpagetests.LogInPageTests -->
     </classes>
-  </test> <!-- AddItemToCart(failed) -->
-</suite> <!-- Failed suite [AddItemToCartSuite] -->
+  </test> <!-- positiveLogInPageTests(failed) -->
+</suite> <!-- Failed suite [LogInPageTestsSuite] -->
