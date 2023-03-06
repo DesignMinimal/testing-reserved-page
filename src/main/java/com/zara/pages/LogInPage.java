@@ -49,7 +49,6 @@ public class LogInPage extends BasePageObject {
 
 	public boolean isErrorMessageVisible(String message) {
 		this.errorMessageLocator = By.xpath("//div[text()='" + message + "']");
-		System.out.print(errorMessageLocator);
 		waitForVisibilityOf(errorMessageLocator, Duration.ofSeconds(5));
 		return find(errorMessageLocator).isDisplayed();
 	}

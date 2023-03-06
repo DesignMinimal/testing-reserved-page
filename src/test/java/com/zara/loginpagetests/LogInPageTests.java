@@ -50,7 +50,7 @@ public class LogInPageTests extends BaseTest {
 
 		// verify expected error message is visible
 		Assert.assertTrue(loginPage.isErrorMessageVisible(expectedErrorMessage),
-				"The message for test N:" + no + description + "is not as expected.");
+				"The message for test N:" + no + description + "is not as expected: " + expectedErrorMessage);
 
 	}
 
